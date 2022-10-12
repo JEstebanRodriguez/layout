@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/script.js" defer></script>
     <title>Diseño de interfaces</title>
 </head>
 <body>
-    <h1 class="titulo">Mi ecommerce</h1>
+    <div class="header">
+        <a href="#" class="header__brand">Mi ecommerce</a>
+        <a href="https://github.com/XJDEVX/layout" target="_blank" class="header__icon">
+            <ion-icon name="logo-github"></ion-icon><span>Juan Rodriguez</span>
+        </a>
+        <a href="https://programandopy.org/" target="_blank" class="header__icon">
+            <ion-icon name="globe-outline"></ion-icon><span>Programando Py</span>
+        </a>
+    </div>
     <div id="pagina" class="pagina">
         <div id="tablero-izquierdo" class="tablero">
             <div class="contenedor">
@@ -64,7 +74,12 @@
             <div class="rotulo">
                 <p class="titulo">Layout</p>
             </div>
-            <div class="layout__body"></div>
+            <div class="layout__body">
+                <div class="layout__body-empty" id="empty-space">
+                    <img src="./images/pointer.png" alt="foto del empty space">
+                    <p>Arrastra los elementos y soltalos acá</p>
+                </div>
+            </div>
         </div>
         <div id="tablero-derecho" class="tablero">
             <div class="contenedor2">
